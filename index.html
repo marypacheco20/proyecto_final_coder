@@ -4,45 +4,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,500&family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Mary Pacheco</title>
 </head>
-<body>
-    <!-- este es navegador-->
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/producto.html">Producto</a></li>
-        <li><a href="pages/contacto.html">Contacto</a></li>
-    </ul>
+ <body>
+    <header class="header">
+        <div class="container logo-nav">
+        <a href="index.html">
+            <img src="public/img/logo_mary.png" alt="Mary Pacheco Visual Designer " > </a> 
+        <nav> 
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a>
+                <li><a href="pages/about.html">Sobre mí</a>
+                <li><a href="pages/proyectos.html">Proyectos</a>
+                <li><a href="pages/market.html">Tienda</a>
+                <li><a href="pages/contacto.html">Contacto</a>
+            </ul>
+        </nav>    
+        
+        </div> 
+    </header>
 
-    <h1>Home </h1>
+    <main>
+       <section> 
+        <div class="div-main-padre"> 
+            <div  class="div-main-hijo" >
+                <img src="public/img/marypacheco_inicio.jpeg" alt="Mary Pacheco Uyuni">
+            </div> 
+            <div  class="div-main-hijo" >
+                <h1>¡Hola!</h1>  
+                <p id="princ-parrafo">Soy Mary, visual designer con background en diseño gráfico, UX y UI. Cuando no estoy diseñando disfruto de lailustrando 
+                <br>
+                <br>
+                <br>
+                <a href="Portafolioweb" class="border-button">Portafolio Gráfico</a> 
+            </div> 
+        </div> 
+    
+        </section>
 
-    <div class="grid-container">
-        <div class="header">Header</div>
-        <div class="main">Main</div>
-        <div class="sidebar">Sidebar</div>
-        <div class="footer">Footer</div>
+        <div class="">
+            <h2 class="div-title">Proyectos</h2>
+            <div class="content"> 
 
-    </div>
+                <article class="post">
+                    <a href="pages/proyectos-interna.html" > <div class="post-header">
+                         <div class="post-img-1"></div></a>
+                    </div>
+                    <div class="post-body">
+                        <h3>Proyecto 1 </h3>
+                        <p>Lorem ipsum dolor, <strong> amet consectetur </strong> amet consectetur adipisicing elit. Alias dolorum possimus harum, dignissimos repudiandae consequatur quas magni perspiciatis, quae temporibus adipisci aspernatur at. </p>
+                        <a href="pages/proyectos-interna.html" class="border-button" > Leer Más </a>
+                    </div>
+                </article>
 
-  <!--
-    <div class="flex-container">
-        <div class="item-1">1</div>
-        <div class="item-2">2</div>
-        <div class="item-3">3</div>
-        <div class="item-4">4</div>
-        <div class="item-1">1</div>
-        <div class="item-2">2</div>
-        <div class="item-3">3</div>
-        <div class="item-4">4</div>
-        <div class="item-4">4</div>
-        <div class="item-1">1</div>
-        <div class="item-2">2</div>
-        <div class="item-3">3</div>
-        <div class="item-4">4</div>
-    </div>
-    -->
+                <article class="post">
+                    <a href="pages/proyectos-interna.html" > <div class="post-header">
+                        <div class="post-img-2"></div></a>
+                    </div>
+                    <div class="post-body">
+                        <h3>Proyecto 2 </h3>
+                        <p>Lorem ipsum dolor, <strong> amet consectetur </strong> amet consectetur adipisicing elit. Alias dolorum possimus harum, dignissimos repudiandae consequatur quas magni perspiciatis, quae temporibus adipisci aspernatur at. </p>
+                        <a href="pages/proyectos-interna.html" class="border-button" > Leer Más </a>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <a href="pages/proyectos-interna.html" > <div class="post-header">
+                        <div class="post-img-3"></div>
+                    </div> </a>
+                    <div class="post-body">
+                        <h3>Proyecto 3 </h3>
+                        <p>Lorem ipsum dolor, <strong> amet consectetur </strong> amet consectetur adipisicing elit. Alias dolorum possimus harum, dignissimos repudiandae consequatur quas magni perspiciatis, quae temporibus adipisci aspernatur at. </p>
+                        <a href="pages/proyectos-interna.html" class="border-button" > Leer Más </a>
+                    </div>
+                </article>
+                
+            </div>
+
+            <!--  <div class="div-hijo">
+                <div >
+                    <img src="public/img/proyecto_1.jpg" alt="Proyecto uno" class="proyecto-imag-small">
+                </div>
+                <h3>Proyecto 1 </h3>
+                <p>Lorem ipsum dolor, <strong> amet consectetur </strong> amet consectetur adipisicing elit. Alias dolorum possimus harum, dignissimos repudiandae consequatur quas magni perspiciatis, quae temporibus adipisci aspernatur at. </p>
+                <a href="" class="button-right" > + </a>
+
+            </div>
+
+            <div class="div-hijo">
+                <div>
+                    <img src="public/img/proyecto_2.jpg" alt="Proyecto dos" class="proyecto-imag-small">
+                </div>
+
+                <h3>Proyecto 2 </h3>
+                <p>Lorem ipsum dolor, <strong> amet consectetur </strong> amet consectetur adipisicing elit. Alias dolorum possimus harum, dignissimos repudiandae consequatur quas magni perspiciatis, quae temporibus adipisci aspernatur at. </p>
+                <a href="" class="button-right"> + </a>   
+            </div>    
+
+            <div class="div-hijo">
+                <figure>
+                    <img src="public/img/proyecto_3.jpg" alt="Proyecto tres" class="proyecto-imag-small">
+                </figure>
+
+                <h3>Proyecto 3 </h3>
+                <p>Lorem ipsum dolor, <strong> amet consectetur </strong> amet consectetur adipisicing elit. Alias dolorum possimus harum, dignissimos repudiandae consequatur quas magni perspiciatis, quae temporibus adipisci aspernatur at. </p>
+                <a href="" class="button-right"> + </a>   
+            </div>   -->  
+        </div>
+    
+    <section> 
+        <h2 class="">Tienda</h2>
+      
+        <div class="div-padre">
+
+            <div class="div-hijo">
+                <figure >
+                    <img src="public/img/gato_flores.jpeg" alt="Proyecto uno">
+                    <div class="capa">
+                        <h3>Producto 1 </h3>
+                        <strong> Precio </strong>
+                        <br>
+                        <a href="" class="button-right" > + </a>
+                    </div> 
+                </figure>
+            </div>
+
+            <div class="div-hijo">
+                <figure >
+                    <img src="public/img/pajaro_ygirasoles.jpeg" alt="Proyecto uno">
+                    <div class="capa">
+                        <h3>Producto 1 </h3>
+                        <strong> Precio </strong>
+                        <br>
+                        <a href="" class="button-right" > + </a>
+                    </div> 
+                </figure>
+            </div>
+
+            <div class="div-hijo">
+                <figure >
+                    <img src="public/img/paloma_luz.jpeg" alt="Proyecto uno">
+                    <div class="capa">
+                        <h3>Producto 1 </h3>
+                        <strong> Precio </strong>
+                        <br>
+                        <a href="" class="button-right" > + </a>
+                    </div> 
+                </figure>
+            </div>
+
+        </div>
+    </section> 
+    </main>
+    <footer>   
+        <div class="div-footer">
+            <div>
+                <h3> ¿Hacemos algo juntos?</h4>
+                <p> marypachecolizares@gmail.com</p>
+
+            </div> 
+            <div>
+                <a href="https://www.instagram.com/estoypacheco/?hl=es-la" target="_blank"><img src="public/img/instagram.png" alt="instagram"></a>
+                <a href=https://www.linkedin.com/in/marypachecolizares/ target="_blank"><img src="public/img/linkedin.png" alt="linkedin"></a>
+            </div>
+           
+        </div> 
+    </footer>
+
 </body>
 </html>

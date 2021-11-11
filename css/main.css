@@ -1,0 +1,567 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-image: url('../public/img/bg_marypacheco.jpg');
+    background-attachment: fixed;
+}
+
+h1 {
+    background: linear-gradient(45deg, #BAA4CF, #DED7E1);
+    -webkit-background-clip: text;
+    color: transparent;  
+    font-size: 35pt;
+   
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+
+h2 {
+    font-size: 28pt;
+    font-family: 'Eb Garamond';
+    color: #BAA4CF;
+    margin: 0 80px ;
+    display: inline-block;
+
+}
+
+h2:after {
+    content: "";
+    display: inline-block;
+    width: 70vw;
+    height: 1px;
+    margin-left: 20px;
+    background: #BAA4CF;
+    right: 0;
+    top: 50%;
+    text-align: right;
+  }
+
+  
+.logo-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header{
+    list-style: none;
+    padding: 0;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a{
+    display: block;
+    padding: 8px;
+    margin: 10px 8px ;
+   text-decoration: none;
+   font-family: 'Montserrat';
+   font-weight: 600;
+   font-size: 12px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   border-radius: 20px;
+   border: 1.8px solid #BAA4CF; 
+   color: #BAA4CF;
+   
+ }
+
+.menu li a:hover{
+    color: #ffffff;
+    background: linear-gradient(45deg, #BAA4CF, #DED7E1);
+    
+}
+
+.tienda
+{
+    margin: auto;
+    align-items: center;
+    padding: 35px;
+    border: solid #DED7E1 5px;
+    background-color: #ffffff;
+}
+
+.tienda li {
+    list-style: square;
+}
+
+.tienda a {
+    padding: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #BAA4CF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+footer{
+    background: linear-gradient(45deg, #BAA4CF, #DED7E1);
+    font-size: 0.8em;
+    color: white;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.div-footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+.div-footer a
+{
+    padding: 0 20px 0 0;
+}
+
+
+.border-button{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 13px;
+    border: 1.8px solid #BAA4CF;
+    padding: 8px;
+    text-decoration: none;
+    width: fit-content;
+    color: #BAA4CF; 
+    text-align: left;
+    text-transform: uppercase;
+    
+}
+
+
+.border-button:hover{
+    color: #ffffff;
+    background: linear-gradient(45deg, #BAA4CF, #DED7E1);
+    border: none;
+}
+
+
+.div-main-padre{
+    display: flex;
+       flex-flow: row wrap; 
+    justify-content: center;
+    align-items: center;
+    margin: 20px ;
+    padding: 100px 0 0 0;
+    
+}
+
+.div-main-hijo{
+    display: inline-block;
+    padding: 15px 15px;
+    width: 450px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.div-padre{
+    display: flex;
+   flex-flow: row wrap; 
+    justify-content: space-around; 
+    width: 90%;
+} 
+
+.div-hijo{
+        width: 21rem; 
+        padding: 15px 15px;
+        margin: 15px 20px 40px 20px;
+        text-align: center;
+}
+
+
+
+    .div-hijo a{
+        text-decoration: none;
+        font-size: 22px;
+        color: #BAA4CF;
+    }
+    
+    .div-hijo figure   { 
+        height: 400px ;
+        width: 400px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .div-hijo figure img  { 
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 500ms ease-out;
+    }
+
+    .div-hijo figure .capa { 
+        position: absolute ;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      background-color: rgba(31, 20, 41, 0.6);
+      opacity: 0;
+      text-align: center;
+      color: #ffffff;
+      transition: all 500ms ease-out;
+    }
+    .div-hijo figure .capa h3{ 
+       padding: 100px;
+    }
+    .div-hijo figure:hover > .capa  { 
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+h4{
+    color: #000000;
+    font-size: 1.2em;
+    font-family: 'Eb Garamond';
+    font-weight: 600;
+    
+}
+
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+/* Código para Posts */
+.post{
+    box-shadow: 0 1px 5px 0px #b8b2bd ;
+    transition: .2s;
+    border-radius: 20px;
+    overflow: hidden;
+    margin:25px;
+    background: #ffffff;
+    }
+
+    .post:hover{
+        transform: translateY(-4px) ;
+        box-shadow: 0 2px 8px 2px #b8b2bd ;
+        }
+    
+    .post-body{
+        padding: 20px 20px 40px 20px;
+        text-align: center;
+        
+    }
+
+    .post a{
+        text-decoration: none;
+    }
+
+
+    .post-img-1{
+        background: url(../public/img/proyecto_1.jpg);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+    }
+
+    .post-img-2{
+        background: url(../public/img/proyecto_2.jpg);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+    }
+
+    .post-img-3{
+        background: url(../public/img/proyecto_3.jpg);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+    }
+
+    .post-header{
+        width: 100%;
+        height: 200px;
+        cursor: pointer;
+        overflow: hidden;
+
+    }
+    .post:hover .post-img-1,
+    .post:hover .post-img-2,
+    .post:hover .post-img-3{
+        transform: scale(1.1);
+        }
+
+
+    .tienda-imag-small{
+        max-width: 600px;
+        width: 100%;
+    } 
+
+
+
+/********************** Código para AboutMe *********************/
+
+.year{
+    font-size: 1em;
+    font-family: 'Eb Garamond';
+    font-weight: 500;
+}
+
+.div-main-interno {
+    margin-top: 120px;
+} 
+
+.about-grid{
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 3vw; 
+    grid-template-areas: 
+    'about-left about-content'
+    'about-left-dos about-content-dos'
+
+}
+        
+.about-left{
+    grid-area: about-left;
+    width: 20vw;
+    margin: 120px AUTO 20px auto;
+    text-align: center;
+    font-weight: 700;
+} 
+
+.about-content{
+    grid-area: about-content;
+    width: 50vw;
+    background-color: #ffffff;
+    padding: 10px 40px 40px;
+    margin: 120px 40px 20px;
+    align-items: center;
+}
+.about-left-dos{
+    grid-area: about-left-dos;
+    width: 20vw;
+} 
+.about-left-dos ol{
+    list-style: none;
+} 
+
+.about-content-dos{
+    grid-area: about-content-dos;
+    width: 50vw;
+    background-color: #ffffff;
+    padding: 10px 40px;
+    margin: 20px 40px;
+}
+        
+.about-content-dos ol {
+    list-style: none;
+} 
+
+table td:first-child {
+   width: 40vw;
+   }
+
+
+/********************** Código paraContacto *********************/
+   .grid-container{
+    background-color: #ffffff;
+    margin: 140px 50px 50px 50px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-gap: 5px; 
+    grid-template-areas: 
+    'datos datos lateral'
+    'datos datos lateral'
+}
+    
+
+.datos {
+    grid-area: datos;
+    padding: 20px;
+}
+
+.lateral{
+    grid-area: lateral;
+    padding: 50px 0 0 0;
+}
+/********************** Código para tienda *********************/
+.banner-tienda{
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    height: 30vh;
+    width: 100%;
+}
+.banner-tienda img{
+    width: 100%;
+    position: relative;
+    margin-top: -10;
+ 
+}
+
+.h1-centrado{
+    position: absolute ;
+  text-align: center;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 20, 41, 0.6);
+
+
+
+}
+/********************** Código para proyectos *********************/
+.banner-proyecto{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+    height: 50vh;
+
+}
+.banner-proyecto img{
+    overflow: hidden;
+    width: 100%;
+    margin-top: -10;
+}
+
+.texto-imagen{
+    position: absolute ;
+  text-align: left;
+  top: 180px;
+  width: 35vw;
+  height: 100%;
+  left: 5%;
+
+
+}
+
+.proyecto-content{
+    width: 80vw;
+    background-color: #ffffff;
+    padding: 30px 40px 40px;
+    margin: auto;
+    margin-bottom: 20px;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.proyecto-izquierda{
+    padding: 20px;
+}
+/* .div-hijo figure .capa h3{ 
+   padding: 100px;
+}
+.div-hijo figure:hover > .capa  { 
+    opacity: 1;
+    visibility: visible;
+
+}
+} */
+
+
+/********************** Media Query *********************/
+@media (max-width: 800px){
+    .content{
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .banner-proyecto img{
+        height: 100%;
+        width: 150%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 620px){
+    .content{
+    grid-template-columns: 1fr;
+    }
+
+    h2{
+        text-align: center;
+        display: block;
+    }
+
+    h2:after {
+        display: none !important;
+  }
+
+/* ****************** MEDIA ABOUT */
+  .about-grid{
+       grid-template-areas: 
+    'about-left'
+    'about-content'
+    'about-content-dos'
+    'about-left-dos' 
+    }
+    .about-left {
+        width: 60vw;
+        align-items: center;
+        margin: 150PX AUTO 20PX AUTO;
+    }
+    .about-content {
+        width: 65vw;
+        margin: auto;
+    }
+    .about-content-dos {
+        width: 65vw;
+    }
+
+
+/* ****************** MEDIA Proyectos */
+.banner-proyecto{
+    margin-top:180px;
+    height:40vh ;
+}
+
+.banner-proyecto img{
+    height: 100%;
+    width: 150%;
+    background-size: cover;
+    background-position: center;
+}
+.texto-imagen{
+    top: 60px;
+  
+  
+  }
+  
+}
+
+
+
